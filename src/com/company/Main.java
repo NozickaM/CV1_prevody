@@ -19,5 +19,33 @@ public class Main {
         double radius = input.nextDouble();
         System.out.println("Circle circumference: " + 2 * Math.PI * radius);
         System.out.println("Circle area: " + Math.PI * Math.pow(radius, 2));
+
+        System.out.print("Jméno a Příjmení: ");
+        input.nextLine(); // consume new line
+        String name = input.nextLine();
+        System.out.println("Jméno: " + name);
+        System.out.print("Zadejte číslo: ");
+        int num = input.nextInt();
+        if (num > 0) {
+            System.out.println("Cislo je kladne.");
+        } else if (num == 0) {
+            System.out.println("Cislo je nula.");
+        } else {
+            System.out.println("Cislo je zaporne.");
+        }
+        System.out.print("cislo 1: ");
+        int numF = input.nextInt();
+        System.out.print("cislo 2: ");
+        int numS = input.nextInt();
+        System.out.print("cislo 3: ");
+        int numT = input.nextInt();
+
+        if (numF > numS && numF > numT) {
+            System.out.println("Max: " + numF);
+        } else if (numS > numF && numS > numT) {
+            System.out.println("Max: " + numS);
+        } else {
+            System.out.println("Max" + numT);
+        }
     }
 }
